@@ -19,7 +19,12 @@ const userControl = {
         path: "thoughts",
         select: "-__v",
       })
-      .then((userId) => {
+      .populate({
+        path: "friends",
+        select: "-__v",
+      })
+      .select("-__v")
+      .then((dbUserData) => {
         if (!dbUserData) {
           res
             .status(404)
