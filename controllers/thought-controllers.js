@@ -27,8 +27,7 @@ const thoughtControl = {
       .select("-__v")
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: "No thought found!" });
-          return;
+          return res.status(404).json({ message: "No thought found!" });
         }
         res.json(dbThoughtData);
       })
