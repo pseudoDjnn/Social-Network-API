@@ -14,7 +14,11 @@ const userControl = {
 
   // GRAB USER BY ID
   getUserId({ params }, res) {
-    User.findOne({})
+    User.findOne({ _id: params.id })
+      .populate({
+        path: "thoughts",
+        select: "-__v",
+      })
       .then((userId) => {
         if (!dbUserData) {
           res
