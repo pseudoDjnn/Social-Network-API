@@ -8,6 +8,8 @@
 
 A back end MongoDB database allowing users to be created, added and removed as "friends," with creation of "thoughts," and "reactions" to those thoughts. Basic CRUD operations are used and act as an MVP idea.
 
+* [Video_Showcase](https://drive.google.com/file/d/1XgxEcMPoRZ-rVIFtyAmFgMOWYmTmBdxz/view)
+
 # Table of Contents
 
 - [Installation](#installation)
@@ -22,7 +24,7 @@ A back end MongoDB database allowing users to be created, added and removed as "
   To install dependencies, run:
 
   ```
-  npm i express mongoose
+  npm i
   ```
 
   ## Usage
@@ -30,8 +32,11 @@ A back end MongoDB database allowing users to be created, added and removed as "
   To run this program, use the following command(s):
 
   ```
-  npm i && npm start
+  npm start
   ```
+  
+  ![socialAPI](https://user-images.githubusercontent.com/105378214/202266080-bd166bf4-ef09-4ac9-9097-930fbfc03390.png)
+
 
   # Test
 
