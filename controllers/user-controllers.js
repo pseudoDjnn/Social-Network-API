@@ -76,6 +76,8 @@ const userControl = {
         if (!dbUserData) {
           return res.status(404).json({ message: "There is no such user." });
         }
+        // $in FINDS SPECIFIED FIELDS
+        return Thought.deleteMany({ _id: { $in: dbUserData.thoughts } });
       })
       .then(() => {
         res.json({ message: "User and thoughts have been deleted!" });
